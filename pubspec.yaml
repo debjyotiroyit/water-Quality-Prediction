@@ -1,0 +1,40 @@
+name: waterquality
+
+description: A new Flutter project.
+version: 0.1.0+1
+publish_to: "none"
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.4.2
+  firebase_ui_auth: ^1.2.2
+  firebase_auth_desktop: ^1.0.2
+  splashscreen:
+    git:
+      url: https://github.com/DPLYR-dev/SplashScreenFlutterPackage
+      ref: a05b64f8326f7c2615491e9f47a1f2dcf8b28a69
+  http: ^0.13.5
+  dropdown_search: ^5.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+dependency_overrides:
+  firebase_core: ^2.10.0
+  firebase_auth: ^4.4.2
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/data.json
+    - assets/splash.jpg
+    - assets/iiitl-logo.webp
+
